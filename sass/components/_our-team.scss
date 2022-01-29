@@ -52,15 +52,16 @@
   align-items: center;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--basecolor3hover);
+  }
+  &:hover .our-team__socialicon,
+  &:focus .our-team__socialicon {
+    fill: var(--basecolor1);
+  }
 }
-.our-team__sociallink:hover,
-.our-team__sociallink:focus {
-  background-color: var(--basecolor3hover);
-}
-.our-team__sociallink:hover .our-team__socialicon,
-.our-team__sociallink:focus .our-team__socialicon {
-  fill: var(--basecolor1);
-}
+
 .our-team__socialicon {
   width: 20px;
   height: 20px;

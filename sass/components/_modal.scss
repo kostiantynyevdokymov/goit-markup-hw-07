@@ -52,9 +52,9 @@
 }
 .icon-close {
   fill: var(--basecolor2);
-}
-.modal__button:hover > .icon-close {
-  fill: var(--basecolor3hover);
+  .modal__button:hover > & {
+    fill: var(--basecolor3hover);
+  }
 }
 
 .modal__title {
@@ -76,10 +76,10 @@
   border-radius: 4px;
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__input:focus,
-.modal__input:hover {
-  border-color: var(--basecolor3hover);
+  &:focus,
+  &:hover {
+    border-color: var(--basecolor3hover);
+  }
 }
 
 .modal__btn {
@@ -95,13 +95,14 @@
   margin-top: 20px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
 }
-.modal__btn:hover,
-.modal__btn:focus {
-  background-color: #188ce8;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+
 .modal__field {
   position: relative;
   display: flex;
@@ -163,15 +164,15 @@
   left: 15px;
   fill: var(--basecolor2);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .modal__input:focus ~ & {
+    fill: var(--basecolor3hover);
+  }
 }
 .modal__link--checkbox {
   color: var(--basecolor3hover);
   padding-right: 5px;
 }
 
-.modal__input:focus ~ .modal__icon {
-  fill: var(--basecolor3hover);
-}
 .modalinput-checkbox:checked + .icon-checkbox {
   background-color: var(--basecolor3hover);
   background-image: url(../images/iconcheck.svg);
