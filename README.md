@@ -1,1 +1,8 @@
-# kostiantynyevdokymov--goit-markup-hw-07
+#goit-markup-hw-07
+
+
+WEB STUDIO
+
+ Выполнен рефакторинг HTML-кода проекта используя методологию BEM.
+
+ Выполнен рефакторинг CSS-кода проекта используя препроцессор SASS.
